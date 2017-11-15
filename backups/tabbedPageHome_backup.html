@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>home</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <style>
+  /*  tabbed/main content areas  */
+
+      .tabbedPage {
+        grid-area: tabbedMain;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "hd topTrunc topTrunc"
+        "image image image"
+        ". content content";
+        grid-gap: 2%;
+      }
+
+      @media only screen and (max-width: 992px) {
+        /*  tablet ? */
+        /*  reorder content in tabs  */
+        .tabbedPage {
+          grid-template-columns:1fr;
+          grid-template-areas:
+          "hd"
+          "topTrunc"
+          "image"
+          "content";
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        /*  mobile disp  */
+      }
+
+      .tabbedPage .tabbedHeader {
+        /*grid-column: 1;
+        grid-row: 1;*/
+        grid-area: hd;
+      }
+
+      .tabbedPage .tabbedTop {
+        grid-area: topTrunc;
+      }
+
+      .tabbedPage .tabbedImage {
+        grid-area: image;
+        overflow: hidden;
+        justify-self: center;
+      }
+
+      .tabbedPage .tabbedContent {
+        /*grid-column: 2/4;
+        grid-row: 2*/
+        grid-area: content;
+        /*overflow-y: auto;*/
+      }
+      </style>
+</head>
+<body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+<div class="container">
+  <div id="home-tab" class="tabbedPage white flow-text">
+    <div class="tabbedHeader center-align">
+      <h1>Test 1</h1></div>
+    <div class="tabbedTop valign-wrapper">truncated header for intro, auto rowed...<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quae!<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, exercitationem.<br>Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Eaque nesciunt porro delectus illo labore officia reprehenderit dignissimos, nam ipsum repellendus.</div>
+    <div class="tabbedImage">
+      <img class="responsive-img" src="/imgs/place-01.jpg">
+    </div>
+    <div class="tabbedContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur neque sunt aut autem hic temporibus veniam fuga architecto fugiat quo placeat non doloribus, et maiores enim tempora similique. Vel quisquam, illum adipisci aperiam fugiat quaerat
+      dolores nulla deserunt tempora laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis repellendus itaque veniam, deleniti nostrum placeat nulla explicabo perspiciatis doloribus consequuntur animi eius, mollitia
+      nisi dolorum ex incidunt perferendis iure laborum architecto laboriosam illo totam odio error eaque. Nostrum itaque alias inventore, voluptates assumenda quos modi quidem, eveniet tempore quisquam. Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Facilis numquam odit excepturi sit, nihil esse minus, praesentium eius iure molestiae provident voluptate temporibus minima eligendi, atque qui quia laborum illum incidunt pariatur, facere ab ex quisquam tempore! Nesciunt esse non nisi
+      iste quae vel odio, ex similique harum, praesentium ea dolores expedita accusantium, eveniet exercitationem modi! Eos dolor voluptatem provident, non quis ut nobis sint nesciunt fugiat cumque! Officiis, sed omnis at. Esse, eos optio autem magni
+      ratione odio, quisquam repellendus repellat deleniti odit. Distinctio minus, asperiores perspiciatis voluptatibus magnam eum nihil doloremque placeat facilis. Saepe voluptatibus magni officiis, natus!</div>
+  </div>
+</div>
+
+</body>
+</html>

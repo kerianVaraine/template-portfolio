@@ -5436,7 +5436,7 @@ button.btn-floating {
 
 .dropdown-content {
   background-color: #fff;
-  margin: 0;
+  margin: 10px;
   display: none;
   min-width: 100px;
   max-height: 650px;
@@ -5454,7 +5454,7 @@ button.btn-floating {
   min-height: 50px;
   line-height: 1.5rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
   text-transform: none;
 }
 
@@ -5473,10 +5473,10 @@ button.btn-floating {
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
-  color: #26a69a;
+  color: #fff;
   display: block;
   line-height: 22px;
-  padding: 14px 16px;
+  padding: 14px 20px;
 }
 
 .dropdown-content li > span > label {
@@ -5489,7 +5489,7 @@ button.btn-floating {
   height: inherit;
   line-height: inherit;
   float: left;
-  margin: 0 24px 0 0;
+  margin: 0 24px 0 24px;
   width: 24px;
 }
 
